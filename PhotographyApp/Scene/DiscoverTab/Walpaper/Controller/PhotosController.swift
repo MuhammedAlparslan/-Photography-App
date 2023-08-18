@@ -12,7 +12,7 @@ class PhotosController: UIViewController {
     //    MARK: - Properties
     
     @IBOutlet private weak var photosCollectionVIew: UICollectionView!
-    private let viewModel    = WalpaperViewModel()
+     let viewModel    = WalpaperViewModel()
     private let cellId       = "\(WalpaperCell.self)"
     
     //    MARK: - LifeCycle

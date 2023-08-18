@@ -15,8 +15,9 @@ class DiscoverCoordinator {
         self.navigationController = navigationController
     }
     
-    func showClickedController() {
+    func showClickedController(data: String) {
         let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "PhotosController") as!  PhotosController
+        controller.viewModel.walpaperId = data
         navigationController.show(controller, sender: nil)
     }
 }
